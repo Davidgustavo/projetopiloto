@@ -4,7 +4,10 @@
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
         <class>app.entity.LogUso</class>
+        <class>app.entity.Address</class>
+        <class>app.entity.Person</class>
         <class>app.entity.User</class>
+        <class>app.entity.Telephone</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
         <properties>
