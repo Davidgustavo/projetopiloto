@@ -1,0 +1,42 @@
+<div class="page-header component-holder" data-component="crn-header" id="crn-header-906764">
+    <div class="component-holder ng-binding ng-scope" data-component="crn-textinput" id="crn-textinput-82377" ng-init="latitude=vars.latitude">
+  <div class="form-group">
+    <label for="input2815">Latitude</label>
+    <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="vars.fname" class="form-control k-textbox" id="input2815" placeholder="">
+  </div>
+</div>
+<div class="component-holder ng-binding ng-scope" data-component="crn-textinput" id="crn-textinput-963345">
+  <div class="form-group">
+    <label for="input8769">Longitude</label>
+    <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="vars.fname2" class="form-control k-textbox" id="input8769" placeholder="">
+  </div>
+</div>
+  <div class="component-holder ng-binding ng-scope" data-component="crn-button" id="crn-button-943925"><button class="btn btn-default k-button btn-block" ng-click="cronapi.client('js.blockly.ObterValorCampo.Executar').run()" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled=""><i class="glyphicon glyphicon-home"></i> <span>Button </span></button></div><h1 class="component-holder text-center" xattr-position="text-center" data-component="crn-title" id="crn-title3266">Teste Geolocalização</h1>
+ 
+</div>
+<button onclick="getLocation()">Try It</button><br><br>
+<label>Latitude: </label>
+<!--<input type="text" id="vars.fname" ng-model="vars.fname" value="vars.fname"><br><br>-->
+
+<span type="text" id="fname" ng-model="fname"></span><br><br>
+<label>Longitude: </label>
+<span type="text" id="fname2" ng-model="fname2"></span><br><br>
+
+ 
+<script>
+var x = document.getElementById("fname");
+var y = document.getElementById("fname2");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = position.coords.latitude ;
+  y.innerHTML = position.coords.longitude;
+}
+</script>

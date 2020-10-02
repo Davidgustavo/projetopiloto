@@ -35,7 +35,6 @@ public static Var Executar() throws Exception {
 
    private Var item = Var.VAR_NULL;
    private Var login_user = Var.VAR_NULL;
-   private Var lista = Var.VAR_NULL;
 
    public Var call() throws Exception {
     item = cronapi.screen.Operations.getValueOfField(Var.valueOf("params.id"));
@@ -50,10 +49,6 @@ public static Var Executar() throws Exception {
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.cidade"), cronapi.object.Operations.getObjectField(login_user, Var.valueOf("cidade")));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.estado"), cronapi.object.Operations.getObjectField(login_user, Var.valueOf("estado")));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.tipo_sanguineo"), cronapi.object.Operations.getObjectField(login_user, Var.valueOf("person.tipo_sanguineo")));
-    lista = cronapi.list.Operations.newList();
-    cronapi.list.Operations.addLast(lista,Var.valueOf("-12.8359504,-38.279418"));
-    System.out.println(lista.getObjectAsString());
-    cronapi.database.Operations.insert(Var.valueOf("app.entity.LogUso"),Var.valueOf("geoposicao",lista),Var.valueOf("id_usuario",cronapi.object.Operations.getObjectField(login_user, Var.valueOf("id"))));
     return Var.VAR_NULL;
    }
  }.call();

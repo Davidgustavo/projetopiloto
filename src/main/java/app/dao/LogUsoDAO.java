@@ -46,11 +46,4 @@ public interface LogUsoDAO extends JpaRepository<LogUso, java.lang.String> {
 
 
 
-  /**
-   * OneToMany Relation
-   * @generated
-   */
-  @Query("SELECT entity FROM User entity WHERE entity.logUso.id = :id")
-  public Page<User> findUser(@Param(value="id") java.lang.String id, Pageable pageable);
-
 }

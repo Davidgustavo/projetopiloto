@@ -53,11 +53,4 @@ public interface UserDAO extends JpaRepository<User, java.lang.String> {
   @Query("SELECT entity FROM Role entity WHERE entity.user.id = :id")
   public Page<Role> findRole(@Param(value="id") java.lang.String id, Pageable pageable);
 
-  /**
-   * Foreign Key logUso
-   * @generated
-   */
-  @Query("SELECT entity FROM User entity WHERE entity.logUso.id = :id")
-  public Page<User> findUsersByLogUso(@Param(value="id") java.lang.String id, Pageable pageable);
-
 }

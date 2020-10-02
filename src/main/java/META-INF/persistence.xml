@@ -6,8 +6,8 @@
         <class>app.entity.LogUso</class>
         <class>app.entity.Address</class>
         <class>app.entity.Person</class>
-        <class>app.entity.User</class>
         <class>app.entity.Telephone</class>
+        <class>app.entity.User</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
         <properties>

@@ -8,4 +8,6 @@ window.dataSourceMap["app.Address"] = { customId: "app.entity.Address", serviceU
 window.dataSourceMap["app.Telephone"] = { customId: "app.entity.Telephone", serviceUrl: "api/cronapi/crud/app.entity.Telephone", serviceUrlODATA: "/api/cronapi/odata/v2/app/Telephone" };
 window.dataSourceMap["app.LogUso"] = { customId: "app.entity.LogUso", serviceUrl: "api/cronapi/crud/app.entity.LogUso", serviceUrlODATA: "/api/cronapi/odata/v2/app/LogUso" };
 window.dataSourceMap["app.Role"] = { customId: "app.entity.Role", serviceUrl: "api/cronapi/crud/app.entity.Role", serviceUrlODATA: "/api/cronapi/odata/v2/app/Role" };
+window.dataSourceMap["app.userMarcacao"] = { customId: "userMarcacao", serviceUrl: "api/cronapi/odata/v2/app/userMarcacao/", serviceUrlODATA: "/api/cronapi/odata/v2/app/userMarcacao" };
+window.dataSourceMap["app.query89059"] = { customId: "userMarcacao", serviceUrl: "api/cronapi/odata/v2/app/userMarcacao/", serviceUrlODATA: "/api/cronapi/odata/v2/app/userMarcacao" };
 window.dataSourceMap["app.Person"] = { customId: "app.entity.Person", serviceUrl: "api/cronapi/crud/app.entity.Person", serviceUrlODATA: "/api/cronapi/odata/v2/app/Person" };

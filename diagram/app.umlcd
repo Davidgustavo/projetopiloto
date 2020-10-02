@@ -694,7 +694,7 @@
       "name": "LogUso",
       "position": {
         "x": 348,
-        "y": 250
+        "y": 262
       },
       "queries": [],
       "realName": "",
@@ -970,7 +970,7 @@
       "name": "Person",
       "position": {
         "x": 608,
-        "y": 46
+        "y": 44
       },
       "queries": [],
       "realName": "",
@@ -1283,29 +1283,28 @@
         "login:java.lang.String",
         "picture:java.lang.String",
         "password:java.lang.String",
-        "theme:java.lang.String",
-        "logUso:LogUso"
+        "theme:java.lang.String"
       ],
       "attrs": {
         ".": {
           "display": "normal"
         },
         ".uml-class-attrs-rect": {
-          "height": 190,
+          "height": 170,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "email\nname\nid\nlogin\npicture\npassword\ntheme\nlogUso\n"
+          "text": "email\nname\nid\nlogin\npicture\npassword\ntheme\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 82.078125,
-          "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nLogUso\n"
+          "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,240)"
+          "transform": "translate(0,220)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -1502,31 +1501,6 @@
           "isSearchable": false,
           "sequence": "",
           "isCascade": false
-        },
-        {
-          "name": "logUso",
-          "type": "LogUso",
-          "dbName": "fk_logUso",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false
         }
       ],
       "id": "d2e50f97-0b9e-4037-94ba-af64568af247",
@@ -1534,7 +1508,7 @@
       "methods": [],
       "name": "User",
       "position": {
-        "x": 86,
+        "x": 88,
         "y": 62
       },
       "queries": [],
@@ -1548,8 +1522,8 @@
       "role": "Class",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 173.1524887084961,
-        "width": 138
+        "height": 162.2265625,
+        "width": 126.375
       },
       "tableName": "",
       "type": "uml.Class",
@@ -1690,51 +1664,6 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 19
-    },
-    {
-      "associationType": "Association",
-      "attrs": {
-        ".marker-source": {
-          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
-          "fill": "#cecece"
-        },
-        ".marker-target": {
-          "d": "",
-          "fill": ""
-        }
-      },
-      "id": "fda9eca3-9cc6-4935-b11a-cde3b7758997",
-      "labels": [
-        {
-          "position": 0.9,
-          "attrs": {
-            "rect": {
-              "fill": "transparent"
-            },
-            "text": {
-              "text": "*",
-              "font-family": "Arial",
-              "font-size": "12px",
-              "fill": "#cecece"
-            }
-          }
-        }
-      ],
-      "name": null,
-      "queries": [],
-      "relationFields": [
-        "logUso:target"
-      ],
-      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
-      "source": {
-        "id": "90572596-8559-4341-bc92-2604056af3a8"
-      },
-      "target": {
-        "id": "d2e50f97-0b9e-4037-94ba-af64568af247"
-      },
-      "type": "uml.Composition",
-      "vertices": [],
-      "z": 15
     }
   ],
   "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",

@@ -1,4 +1,4 @@
-if (window.fixedTimeZone === undefined || window.fixedTimeZone === null) {
+Fif (window.fixedTimeZone === undefined || window.fixedTimeZone === null) {
   window.fixedTimeZone = true;
 }
 

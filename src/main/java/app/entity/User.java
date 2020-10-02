@@ -84,14 +84,6 @@ public class User implements Serializable {
   private java.lang.String theme;
 
   /**
-  * @generated
-  */
-  @ManyToOne
-  @JoinColumn(name="fk_logUso", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
-  
-  private LogUso logUso;
-
-  /**
    * Construtor
    * @generated
    */
@@ -237,26 +229,6 @@ public class User implements Serializable {
    */
   public User setTheme(java.lang.String theme){
     this.theme = theme;
-    return this;
-  }
-
-  /**
-   * Obtém logUso
-   * return logUso
-   * @generated
-   */
-  
-  public LogUso getLogUso(){
-    return this.logUso;
-  }
-
-  /**
-   * Define logUso
-   * @param logUso logUso
-   * @generated
-   */
-  public User setLogUso(LogUso logUso){
-    this.logUso = logUso;
     return this;
   }
 
